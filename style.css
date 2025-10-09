@@ -1,100 +1,69 @@
+/* === Global Styles === */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f5f7fa;
+  color: #222;
   line-height: 1.6;
-  background: #f8f9fa;
 }
 
+/* === Header === */
 header {
-  background: #0078d7;
+  background: linear-gradient(135deg, #0078d7, #0053a6);
   color: white;
   text-align: center;
-  padding: 40px 10px;
+  padding: 3rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-  background: #333;
-  text-align: center;
-  padding: 10px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
-nav a:hover {
-  color: #00b4d8;
-}
-
+/* === Section Styling === */
 section {
-  padding: 20px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-  background: white;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+/* === Projects Section === */
+.projects ul {
+  list-style: none;
+  padding: 0;
 }
-.project a {
-  display: inline-block;
+
+.projects li {
   background: #0078d7;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
-  transition: background 0.3s ease;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.project a:hover {
-  background: #00b4d8;
+.projects li:hover {
+  background: #005fa3;
+  transform: scale(1.03);
 }
 
+/* === Footer === */
 footer {
-  background: #222;
-  color: #ccc;
   text-align: center;
-  padding: 10px;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-h1,
-h2,
-p,
-a,
-.project {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s forwards;
-}
-
-h1 {
-  animation-delay: 0.2s;
-}
-h2 {
-  animation-delay: 0.4s;
-}
-p {
-  animation-delay: 0.6s;
-}
-a {
-  animation-delay: 0.8s;
-}
-.project {
-  animation-delay: 1s;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  padding: 1rem;
+  background: #222;
+  color: white;
+  margin-top: 30px;
 }
