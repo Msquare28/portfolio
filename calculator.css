@@ -1,0 +1,152 @@
+/* === Base Layout === */
+body {
+  background: #0b172a;
+  color: #f0f0f0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #14233b;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 340px;
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+h1 {
+  color: #00bfff;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+/* === Buttons === */
+#backBtn {
+  background: #ff3366;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+#backBtn:hover {
+  opacity: 0.9;
+}
+
+/* === Calculator Box === */
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+#display {
+  background: #0e1a30;
+  border: none;
+  color: #00ffcc;
+  padding: 15px;
+  font-size: 1.4em;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  text-align: right;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #0077ff, #00bfff);
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn.op {
+  background: linear-gradient(90deg, #ff9900, #ff6600);
+}
+
+.btn.fn {
+  background: linear-gradient(90deg, #009688, #00b894);
+}
+
+#clear {
+  background: #ff4c4c;
+}
+
+#equals {
+  background: #22bb33;
+}
+
+#del {
+  background: #ff4444;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  #display {
+    font-size: 1.2em;
+    padding: 12px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  #backBtn {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+
+/* === Small Height (Landscape Phones) === */
+@media (max-height: 600px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+}

@@ -124,6 +124,10 @@ a {
   margin-bottom: 10px;
   color: #0078d7;
 }
+.project-card p {
+  font-size: 0.9em;
+  color: #555;
+}
 
 .project-card a {
   display: inline-block;
@@ -215,12 +219,12 @@ a {
 #skills {
   padding: 50px 20px;
   text-align: center;
-  background: #f0f4f8;
+  background: #90e0ef;
 }
 
 .skills-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   max-width: 600px;
   margin: 0 auto;
