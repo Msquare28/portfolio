@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Data Tracker</title>
+    <link rel="stylesheet" href="data-tracker.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back-btn">⬅️ Back to Portfolio</a>
+
+    <div class="container">
+      <h1>📶 Mobile Data Tracker</h1>
+      <h2>📅 Daily Data History</h2>
+      <ul id="historyList"></ul>
+
+      <div class="input-group">
+        <label>Total Data (GB):</label>
+        <input type="number" id="totalData" placeholder="e.g. 5" />
+      </div>
+
+      <div class="input-group">
+        <label>Data Used (GB):</label>
+        <input type="number" id="dataUsed" placeholder="e.g. 1.2" />
+      </div>
+
+      <button id="updateBtn">Update Usage</button>
+
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <p id="statusText"></p>
+
+      <button id="resetBtn" class="reset">Reset</button>
+    </div>
+
+    <script src="data-tracker.js"></script>
+  </body>
+</html>

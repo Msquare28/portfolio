@@ -5,15 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+  body {
+    background-image: url('mypic.jpg'); /* change to your actual file name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .weather-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+
+  input, button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+
   </head>
   <body>
-    <section class="weather-app">
-      <h1>🌦️ Weather App</h1>
-      <input type="text" id="city" placeholder="Enter city name" />
-      <button onclick="getWeather()">Check Weather</button>
-      <div id="result"></div>
-      <a href="./index.html">← Back to Portfolio</a>
-    </section>
+    <div class="container">
+      <button class="back-btn" onclick="window.location.href='index.html'">
+        ← Back
+      </button>
+      <h1>Weather App</h1>
+
+      <div class="search-box">
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button id="searchBtn">Search</button>
+      </div>
+
+     <div class="weather-container">
+  <!-- Loading Spinner -->
+  <div class="loader" id="loader" style="display:none;">
+    <div class="spinner"></div>
+    <p>Fetching weather data...</p>
+  </div>
+
+  <!-- Weather Card -->
+  <div class="weather-card" id="weatherCard" style="display:none;">
+    <h2 id="cityName"></h2>
+    <div class="icon-temp">
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+      <p class="temp-text"><span id="temp"></span> °C</p>
+    </div>
+    <p id="weatherDesc"></p>
+    <p>💧 Humidity: <span id="humidity"></span>%</p>
+    <p>🌬️ Wind Speed: <span id="wind"></span> km/h</p>
+  </div>
+</div>
+
 
     <script src="weather.js"></script>
   </body>
