@@ -641,3 +641,71 @@ h1 {
     padding: 20px;
   }
 }
+/* === 📱 Full Mobile Optimization === */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+
+  /* Sections */
+  section {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  /* Projects & Skills */
+  .projects-container,
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Footer & Links */
+  .social-links a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
