@@ -147,20 +147,76 @@ a {
 .cv-card {
   max-width: 420px;
   margin: 12px auto;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   color: #0b2a4a;
 }
-.cv-card h3 { color: #0078d7; }
-.cv-card p { color: #333; font-size: 0.95em; }
+.cv-card h3 {
+  color: #0078d7;
+}
+.cv-card p {
+  color: #333;
+  font-size: 0.95em;
+}
 /* CV card controls */
-.cv-header { position:relative; padding-right:48px; }
-.cv-header h3 { margin:0; text-align:center; width:100%; }
-.cv-header .link-like { position:absolute; right:0; top:0; background:none; border:none; color:#0078d7; text-decoration:underline; cursor:pointer; font-size:0.9rem; }
-.cv-actions { display:flex; gap:10px; justify-content:center; margin-top:10px; }
-.cv-actions a { flex: 1; display:inline-flex; align-items:center; justify-content:center; padding:8px 12px; border-radius:6px; background:#0078d7; color:#fff; text-decoration:none; }
-.cv-actions a:hover { background:#00b4d8; }
-.cv-preference { display:block; text-align:center; margin-top:8px; color:#333; font-size:0.9rem; }
-.btn-cv { display:inline-block; margin-top:6px; padding:8px 14px; background:#fff; color:#0078d7; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0078d7; cursor:pointer; }
+.cv-header {
+  position: relative;
+  padding-right: 48px;
+}
+.cv-header h3 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.cv-header .link-like {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  color: #0078d7;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.cv-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cv-actions a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #0078d7;
+  color: #fff;
+  text-decoration: none;
+}
+.cv-actions a:hover {
+  background: #00b4d8;
+}
+.cv-preference {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  color: #333;
+  font-size: 0.9rem;
+}
+.btn-cv {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 14px;
+  background: #fff;
+  color: #0078d7;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #0078d7;
+  cursor: pointer;
+}
 /* Navbar */
 .navbar {
   display: flex;
